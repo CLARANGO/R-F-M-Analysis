@@ -1,4 +1,4 @@
---creating table and extracting data
+--create table and import data
 CREATE TABLE SALES_DATASET_RFM_PRJ
 (
   ordernumber VARCHAR,
@@ -25,7 +25,7 @@ CREATE TABLE SALES_DATASET_RFM_PRJ
 ) 
 
 
---create table and extract data for RFM Segmentation Scores
+--create table and import data for RFM Segmentation Scores
 CREATE TABLE segment_score
 (
     segment Varchar,
