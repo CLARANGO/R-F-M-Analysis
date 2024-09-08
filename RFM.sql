@@ -106,6 +106,8 @@ WHERE ABS((quantityordered-avg)/sd)>3)
 DELETE FROM SALES_DATASET_RFM_PRJ
 WHERE quantityordered IN (SELECT quantityordered FROM sd_3)
 
+--deleted 14 records--
+
 -- Create new clean table after cleaning data
 CREATE TABLE SALES_DATASET_RFM_PRJ_CLEAN AS 
 (SELECT * FROM SALES_DATASET_RFM_PRJ )
